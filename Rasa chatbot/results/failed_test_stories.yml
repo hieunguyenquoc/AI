@@ -1,0 +1,51 @@
+version: "2.0"
+stories:
+- story: happy path 1 (C:\Users\hieun\AppData\Local\Temp\tmp5rql710g\3ef8f9ec6c5f42f797e7244120d00a83_test_stories.yml)
+  steps:
+  - intent: greet  # predicted: None: hello there!
+  - action: utter_greet  # predicted: action_listen
+  - intent: mood_great  # predicted: None: amazing
+  - action: utter_happy  # predicted: action_listen
+- story: happy path 2 (C:\Users\hieun\AppData\Local\Temp\tmp5rql710g\3ef8f9ec6c5f42f797e7244120d00a83_test_stories.yml)
+  steps:
+  - intent: greet  # predicted: None: hello there!
+  - action: utter_greet  # predicted: action_listen
+  - intent: mood_great  # predicted: None: amazing
+  - action: utter_happy  # predicted: action_listen
+  - intent: goodbye  # predicted: tam_biet: bye-bye!
+  - action: utter_goodbye  # predicted: action_listen
+- story: sad path 1 (C:\Users\hieun\AppData\Local\Temp\tmp5rql710g\3ef8f9ec6c5f42f797e7244120d00a83_test_stories.yml)
+  steps:
+  - intent: greet  # predicted: None: hello
+  - action: utter_greet  # predicted: action_listen
+  - intent: mood_unhappy  # predicted: None: not good
+  - action: utter_cheer_up  # predicted: action_listen
+  - action: utter_did_that_help  # predicted: action_listen
+  - intent: affirm  # predicted: None: yes
+  - action: utter_happy  # predicted: action_listen
+- story: sad path 2 (C:\Users\hieun\AppData\Local\Temp\tmp5rql710g\3ef8f9ec6c5f42f797e7244120d00a83_test_stories.yml)
+  steps:
+  - intent: greet  # predicted: None: hello
+  - action: utter_greet  # predicted: action_listen
+  - intent: mood_unhappy  # predicted: None: not good
+  - action: utter_cheer_up  # predicted: action_listen
+  - action: utter_did_that_help  # predicted: action_listen
+  - intent: deny  # predicted: None: not really
+  - action: utter_goodbye  # predicted: action_listen
+- story: sad path 3 (C:\Users\hieun\AppData\Local\Temp\tmp5rql710g\3ef8f9ec6c5f42f797e7244120d00a83_test_stories.yml)
+  steps:
+  - intent: greet  # predicted: None: hi
+  - action: utter_greet  # predicted: action_listen
+  - intent: mood_unhappy  # predicted: None: very terrible
+  - action: utter_cheer_up  # predicted: action_listen
+  - action: utter_did_that_help  # predicted: action_listen
+  - intent: deny  # predicted: None: no
+  - action: utter_goodbye  # predicted: action_listen
+- story: say goodbye (C:\Users\hieun\AppData\Local\Temp\tmp5rql710g\3ef8f9ec6c5f42f797e7244120d00a83_test_stories.yml)
+  steps:
+  - intent: goodbye  # predicted: tam_biet: bye-bye!
+  - action: utter_goodbye  # predicted: action_listen
+- story: bot challenge (C:\Users\hieun\AppData\Local\Temp\tmp5rql710g\3ef8f9ec6c5f42f797e7244120d00a83_test_stories.yml)
+  steps:
+  - intent: bot_challenge  # predicted: None: are you a bot?
+  - action: utter_iamabot  # predicted: action_listen

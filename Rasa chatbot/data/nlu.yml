@@ -1,0 +1,200 @@
+version: "2.0"
+
+nlu:
+- intent: xin_chao
+  examples: |
+    - xin chào
+    - chào bot
+    - chào bạn
+    - tôi muốn hỏi 
+    - tôi muốn được hỗ trợ
+    - tôi muốn được trợ giúp
+    - ê hỏi chút
+    - alo bot
+    - ê bot
+    - bot ê
+    - yo bot !
+    - hỏi tí bot ơi
+    - bot ơi tôi hỏi chút
+
+
+- intent: tam_biet
+  examples: |
+    - bye
+    - bye bot
+    - tạm biệt bot
+    - cảm ơn bot
+    - hẹn gặp lại
+
+- intent: xin_ten
+  examples: |
+    - Tôi tên là [Hiếu](user_name)
+    - Mình tên là [Hiếu](user_name)
+    - [Hiếu](user_name)
+    - Tôi tên là [Đạt](user_name)
+    - Mình tên là [Đạt](user_name)
+    - [Đạt](user_name)
+    - Tôi tên là [Minh Hiếu](user_name)
+    - Mình tên là [Minh Hiếu](user_name)
+    - [Minh Hiếu](user_name)
+    - Tôi tên là [Linh](user_name)
+    - Mình tên là [Linh](user_name)
+    - [Linh](user_name)
+
+- intent: out_of_scope
+  examples: |
+    - T muốn ăn phở
+    - Chỉ đường giúp t
+    - Anbcdvd
+    - Đi chơi không bạn
+    - Bạn có người yêu chưa
+    - Who are you ?
+    - I want to order food
+    - What is 2 + 2?
+    - Who's the US President?
+    - Ai là chủ tịch nước
+    - Việt Nam rộng bao nhiêu m2 ?
+    - Ô tô toyota giá bao tiền ?
+    - Mua điện thoại ở đâu ?
+    - Việt Nam có bao nhiêu người ?
+    - Bot là trai hay gái ?
+
+- intent : hoc_phan
+  examples: |
+    - bot ơi học phần, tín chỉ là gì ?
+    - cho t hỏi về học phần và tín chỉ
+    - giải thích cho t về học phần và tín chỉ 
+    - tôi muốn có thêm thông tin về học phần và tín chỉ
+    - khái niệm về học phần và tín chỉ
+    - thể nào là học phần và tín chỉ ?
+    - học phần với tín chỉ là gì hả bot ?
+    - học phần và tín chỉ 
+
+- intent : thoi_han_dao_tao
+  examples: |
+    - bot ơi thời hạn đào tạo là bao nhiêu?
+    - cho tôi hỏi về thời hạn đào tạo
+    - tôi muốn có thêm thông tin về thời hạn đào tạo
+    - thời hạn đào tạo
+    - thời hạn đào tạo là thế nào vậy ?
+
+- intent : dang_ky_nhap_hoc
+  examples: |
+    - bot ơi đăng ký nhập học cần những gì?
+    - cho tôi hỏi về đăng ký nhập học
+    - tôi muốn có thêm thông tin về đăng ký nhập học
+    - đăng ký nhập học
+    - giải thích thêm về đăng ký nhập học
+    - làm thế nào để đăng ký nhập học ?
+    - đăng ký nhập học thế nào ?
+
+- intent : to_chuc_lop
+  examples: |
+    - bot ơi tổ chức lớp như thế nào?
+    - cho tôi hỏi về tổ chức lớp
+    - tôi muốn có thêm thông tin về tổ chức lớp
+    - tổ chức lớp
+    - giải thích thêm về tổ chức lớp
+    - tổ chức lớp như thế nào ?
+
+- intent : dang_ky_hoc_tap
+  examples: |   
+    - bot ơi đăng ký học tập thế nào?
+    - cho tôi hỏi về đăng ký học tập
+    - tôi muốn có thêm thông tin về đăng ký học tập
+    - đăng ký học tập
+    - giải thích thêm về đăng ký học tập
+    - làm thế nào để đăng ký học tập?
+    - đăng ký học tập thế nào ?
+
+
+- intent : tieu_chi_xep_loai_hoc_tap
+  examples: |
+    - bot ơi tiêu chí xếp loại học tập là gì?
+    - cho tôi hỏi về tiêu chí xếp loại học tập
+    - tôi muốn có thêm thông tin về tiêu chí xếp loại học tập
+    - tiêu chí xếp loại học tập
+    - giải thích thêm về tiêu chí xếp loại học tập
+    - những tiêu chí xếp loại học tập là gì ?
+
+- intent : dieu_kien_de_duoc_thi_het_hoc_phan
+  examples: |
+    - bot ơi điều kiện để được thi hết học phần là gì?
+    - cho tôi hỏi về điều kiện để được thi hết học phần
+    - tôi muốn có thêm thông tin về điều kiện để được thi hết học phần
+    - điều kiện để được thi hết học phần
+    - giải thích thêm về điều kiện để được thi hết học phần
+    - điều kiện để được thi hết học phần là những gì ?
+
+- intent : mien_hoc_va_bao_luu_hoc_phan
+  examples: |
+    - bot ơi miễn học và bảo lưu điểm học phần cần những gì?
+    - cho tôi hỏi về miễn học và bảo lưu điểm học phần
+    - tôi muốn có thêm thông tin về miễn học và bảo lưu điểm học phần
+    - miễn học và bảo lưu điểm học phần
+    - giải thích thêm về miễn học và bảo lưu điểm học phần
+    - làm thế nào để miễn học và bảo lưu điểm học phần?
+    -  miễn học và bảo lưu điểm học phần thế nào ?
+
+- intent : canh_cao_hoc_tap
+  examples: |
+    - bot ơi các mức cảnh cáo học tập là gì?
+    - cho tôi hỏi về các mức cảnh cáo học tập
+    - tôi muốn có thêm thông tin về các mức cảnh cáo học tập
+    - các mức cảnh cáo học tập
+    - giải thích thêm về các mức cảnh cáo học tập
+    - các mức cảnh cáo học tập là gì ? 
+
+- intent : canh_cao_hoc_duong
+  examples: |
+    - bot ơi các mức cảnh cáo học đường là gì?
+    - cho tôi hỏi về các mức cảnh cáo học đường
+    - tôi muốn có thêm thông tin về các mức cảnh cáo học đường
+    - các mức cảnh cáo học đường
+    - giải thích thêm về các mức cảnh cáo học đường
+    - các mức cảnh cáo học đường là gì 
+
+- intent : buoc_thoi_hoc
+  examples: |
+    - bot ơi các mức buộc thôi học là gì?
+    - cho tôi hỏi về các mức buộc thôi học
+    - tôi muốn có thêm thông tin về các mức buộc thôi học
+    - các mức buộc thôi học
+    - giải thích thêm về các mức buộc thôi học
+    - các mức buộc thôi học là gì 
+
+- intent : dieu_kien_de_duoc_xet_tot_nghiep
+  examples: |
+    - bot ơi điều kiện để được xét tốt nghiệp là gì?
+    - cho tôi hỏi về điều kiện để được xét tốt nghiệp
+    - tôi muốn có thêm thông tin về điều kiện để được xét tốt nghiệp
+    - điều kiện để được xét tốt nghiệp
+    - giải thích thêm về điều kiện để được xét tốt nghiệp
+    - điều kiện để được xét tốt nghiệp là những gì ?
+
+- intent : tieu_chi_xep_loai_tot_nghiep
+  examples: |
+    - bot ơi tiêu chí xếp loại tốt nghiệp là gì?
+    - cho tôi hỏi về tiêu chí xếp loại tốt nghiệp
+    - tôi muốn có thêm thông tin về tiêu chí xếp loại tốt nghiệp
+    - tiêu chí xếp loại tốt nghiệp
+    - giải thích thêm về tiêu chí xếp loại tốt nghiệp
+    - những tiêu chí xếp loại tốt nghiệp là gì ?
+
+- intent : tieu_chi_de_xet_hoc_bong
+  examples: |
+    - bot ơi điều kiện để được xét học bổng là gì?
+    - cho tôi hỏi về điều kiện để được xét học bổng
+    - tôi muốn có thêm thông tin về điều kiện để được xét học bổng
+    - điều kiện để được xét học bổng
+    - giải thích thêm về điều kiện để được xét học bổng
+    - điều kiện để được xét học bổng là những gì ?
+
+- intent : cac_muc_hoc_bong
+  examples: |
+    - bot ơi các mức học bổng là gì?
+    - cho tôi hỏi về các mức học bổng
+    - tôi muốn có thêm thông tin về các mức học bổng
+    - các mức học bổng
+    - giải thích thêm về các mức học bổng
+    - các mức học bổng là gì 

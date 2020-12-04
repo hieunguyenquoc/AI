@@ -1,0 +1,157 @@
+version: "2.0"
+
+intents:
+    - xin_chao
+    - tam_biet
+    - xin_ten
+    - fall_back
+    - hoc_phan
+    - thoi_han_dao_tao
+    - dang_ky_nhap_hoc
+    - to_chuc_lop
+    - dang_ky_hoc_tap
+    - tieu_chi_xep_loai_hoc_tap
+    - dieu_kien_de_duoc_thi_het_hoc_phan
+    - mien_hoc_va_bao_luu_hoc_phan
+    - canh_cao_hoc_tap
+    - canh_cao_hoc_duong
+    - buoc_thoi_hoc
+    - dieu_kien_de_duoc_xet_tot_nghiep
+    - tieu_chi_xep_loai_tot_nghiep
+    - tieu_chi_de_xet_hoc_bong
+    - cac_muc_hoc_bong
+
+entity:
+   - user_name
+
+slot:
+  user_name:
+    auto_fill : true
+    type: text
+
+responses:
+  utter_xin_ten:
+    - text: "Xin chào {user_name}. Tôi có thể giúp gì cho bạn"
+
+  utter_xin_chao:
+  - text: "Xin chào. Tôi có thể xin tên của bạn được không"
+
+  utter_tam_biet:
+  - text: "Cảm ơn đã sử dụng tôi. Có gì cần trợ giúp thêm nhớ hỏi tôi nhé."
+
+  utter_hoc_phan:
+  - text: "- Học phần là đơn vị cấu thành của CTĐT, thể hiện khổi lượng kiến thức tương đối trọn vẹn, được tổ chức giảng dạy trong một học kỳ 
+           - Một học phần có thể có nhiều thành phần = lý thuyết, thảo luận, bài tập, thực hành, thí nghiệm, bài tập lớn
+           - Các loại học phần = học phần tích lũy
+                                  học phần bắt buộc
+                                  học phần tự chọn
+                                  học phần điều kiện
+                                  học phần tiên quyết
+                                  học phần học trước
+                                  học phần tương đương
+                                   học phần tốt nghiệp
+           - Tín chỉ = đơn vị để lượng hóa khối lượng học tập
+           - Một tín chỉ bằng 15 tiết lý thuyết, 30-45 tiết thực hành"
+
+  utter_thoi_han_dao_tao:
+  - text: "- Bậc đại học dài hạn chính quy, tốt nghiệp kỹ sư = 5 năm
+           - Bậc đại học dài hạn chính quy. tốt nghiệp cử nhân đại học = 4 năm
+           - Bậc cao đẳng chính quy, tốt nghiệp cử nhân cao đẳng = 3 năm
+           - Một năm học có 2 kỳ chính và ít nhất một kỳ phụ
+           - Một kỳ chính có 15 tuần học và 3 tuần thi, một kỳ phụ có 5 tuần học và 1 tuần thi"
+
+  utter_dang_ky_nhap_hoc:
+  - text: "Khi đăng ký nhập học, sinh viên nộp các giấy tờ theo quy định của Quy chế tuyển sinh đại học"
+  
+  utter_to_chuc_lop:
+  - text: "Sinh viên sẽ được phân chia vào hai dạng lớp :
+                    + Lớp sinh viên = được tổ chức theo khóa tuyển sinh và theo ngành hoặc theo chuyên ngành đạo tạo, có hệ thống cán bộ lớp, cán bộ đoàn
+                    + Lớp học phần = là đơn vị cơ bản cho việc tổ chức giảng dạy. Một lớp bao gồm các sinh viên theo học cùng một học phần trong cùng một khoảng thời gian nhất định, do một giáo viên giảng dạy"
+
+  utter_dang_ky_hoc_tap:
+  - text: "- Đây là quy trình bắt buộc của mỗi sinh viên. Sinh viên chọn đăng ký học phần phù hợp với kế hoạch của ban thân trên công thông tin của sinh viên
+           - Đối với đợt đăng ký chính = sinh viên đăng ký chậm nhất 1 tuần trước khi kỳ học bắt đầu
+           - Đối với đợt điều chỉnh = sinh viên đăng ký lại các học phần bị hủy do không đăng ký được, đăng ký bổ sung hay bỏ bớt học phần
+           - Khối lượng học tập sinh viên có thể đăng ký =
+             + 14TC - 25TC = sinh viên có xếp loại học lực bình thường
+             + 10TC - 14TC = sinh viên có xếp loại học lức yếu, không đạt chuẩn ngoại ngữ theo quy định
+             + Tối đa 8TC trong học kỳ phụ "
+  
+  utter_tieu_chi_xep_loai_hoc_tap:
+  - text: "Đây là các tiêu chí xếp loại học tập"
+    image: "https://imgur.com/DNsh3C9"
+  
+  utter_dieu_kien_de_duoc_thi_het_hoc_phan:
+  - text: "- Sinh viên phải tham gia ít nhất 80% số giờ lên lớp của học phần
+           - Hoàn thành đầy đủ các phần bắt buộc của học phần
+           - Không vi phạm kỷ luật học tập, nội quy trường đến mức bị cấm thi theo quy định của học viện
+           - Có điểm thường xuyên trên 1 "
+  
+  utter_mien_hoc_va_bao_luu_hoc_phan:
+  - text: "- Khi học cùng lúc hai CTĐT, sinh viên được xem xét miễn học phí, bảo lưu điểm học phần trong CTĐT thứ hai nếu đã tích lũy học phần đó trong CTĐT thứ nhất, có kết quả thi kết thúc học phần từ D+ trở lên
+           - Khi sinh viên thuộc diện chuyển trường, học viện sẽ xem xét cho phép bảo lưu các học phần được coi là tương đươn, không quá 50% khối lượng kiến thức toàn khóa. Sinh viên phải hoàn thành các học phần còn lại để được cấp bằng tốt nghiệp
+             Thời hạn bảo lưu kết quả học tập =
+                + Không quá 7 năm tính đến ngày xét với các học phần thuộc khối kiến thức giáo dục đại cương
+                + Không quá 5 năm tính đến ngày xét đối với các học phần thuộc khối kiến thức giáo dục chuyên nghiệp"
+  
+  utter_canh_cao_hoc_tap :
+  - text: "Có 4 mức cảnh cáo học tập : 1, 2, 3, 4 có tính tích lũy và giảm nhẹ
+                + Sinh viên bị nâng 1 mức cảnh cáo học tập nếu điểm TBHK đạt dưới 0.80 đối với học kỳ đầu tiên của khóa học, dưới 1.00 đối với các học kỳ tiếp theo
+                                                               tổng số TC của các học phần còn bị điểm F tính từ đầu khóa học đến thời điểm xét vượt quá 24TC
+                + Sinh viên bị nâng 2 mức cảnh cáo học tập khi điểm TBHK bằng 0 hoặc không đăng ký học tập, tự ý bỏ học không lý do
+                + Sinh viên đang bị cảnh cáo học tập, nếu trong lần xử lý học tập tiếp theo nếu không vi phạm ở những điều trên sẽ được giảm 1 mức cảnh cáo học tập"
+  
+  utter_canh_cao_hoc_duong:
+  - text: "Có 4 mức cảnh có học đường : 1, 2, 3, 4, có tính tích luy, không có tính giảm nhẹ 
+           + Trong quá trình học tập, mỗi lần bị nhận hình thức kỷ luật từ cảnh cáo đến kỷ luật, sinh viên bị nâng 1 mức cảnh cáo học đường
+           + Sinh viên bị hình thức cảnh cáo hoặc đình chỉ thi, kiểm tra do vi phạm quy chế thi, kiểm tra sẽ bị nâng 1 mức cảnh cáo học đường
+           + Sinh viên đi thi hộ hay nhờ người khác đi thi hộ sẽ bị nâng 2 mức cảnh cáo học đường
+           + Sinh viên vi phạm quy định nộp học lí sẽ bị nâng 1 mức cảnh cáo học đường "
+   
+  utter_buoc_thoi_hoc:
+  - text: "Sinh viên bị buộc thôi học nếu 
+        + có mức cảnh cáo học tập bằng 4
+        + có mức cảnh cáo học đường bằng 4
+        + có mức cảnh cáo học tập bằng 3 và có mức cảnh cáo học đường bất kỳ
+        + có mức cảnh cáo học đường bằng 3 và có mức cảnh cảo học tập bất kỳ
+        + hết thời gian tối đa được phép học tập
+        + vi phạm quy định nộp học phí
+        + đi thi hộ, nhờ thi hộ "
+        
+  utter_dieu_kien_de_duoc_xet_tot_nghiep:
+  - text: "Tại thời điểm xét tốt nghiệp, sinh viên cần các điều kiện sau :
+                + Tại thời điểm xét tốt nghiệp sinh viên không bị truy cứu trách nhiệm hình sự hoặc không đang trong thời gian bị kỷ luật 
+                + Tích lũy đủ sô học phần và TC
+                + Điểm TBTL toàn khóa học từ 2.00 trở lên
+                + Có các chứng chỉ quốc phòng an ninh, giáo dục thể chất
+                + Có chứng chỉ ngoại ngữ đạt chuẩn đầu ra theo quy định của học viên
+                + Có đơn gửi phòng Đào tạo đề nghị được xét tốt nghiệp"
+                
+  utter_tieu_chi_xep_loai_tot_nghiep:
+  - text: ""
+    image: "https://i.imgur.com/iyOKCuB.jpg"
+    
+   
+  utter_tieu_chi_de_xet_hoc_bong:
+  - text: " + Tất cả các học phần đăng ký trong kỳ học phải từ D+trở lên
+            + Điểm TBHK đạt loại khá trở lên
+            + Số TC tích lũy tối thiểu 90% tổng số TC theo kế hoạch học tập trong CTTĐ tính đến hết học kỳ đang xét học bổng
+            + Số TC đăng ký học tập trong học kỳ xét họ bổng phải thỏa mãn tối thiếu 15TC đối với sinh viên có số TC tích lũy không vượt quá tổng số TC theo kế hoạch học tập đến hết kỳ xét học bổng,
+              tối thiểu 10TC đối với sinh viên có số TC tích lũy nhiều hơn TC theo kế hoạch học tập trong CTĐT tính đến hết kỳ học xét học bổng
+            + Đạt trình độ ngoại ngữ theo chuẩn của học viện
+            + Điểm rèn luyên từ khá trở lên "
+           
+  utter_cac_muc_hoc_bong:
+  - text: "Có ba mức học bổng : khá, giỏi, xuất sắc
+                + Khá = bằng mức trần học phí do Chính phụ quy định đối với các CTĐT, sinh viên có điểm TBHK đạt mức khá, điểm rèn luyện khá
+                + Giỏi = bằng 1,2 lần mức khá, sinh viên có điểm TBHK đạt loại giỏi, điểm rèn luyện mức tốt 
+                + Xuất = sắc bằng 1,4 lần mức giỏi, sinh viên có điểm TBHK và điểm rèn luyện xuất sắc"    
+  utter_out_of_scope:
+  - text: "Tôi không hiểu ý của bạn. Bạn có thể nhập lại yêu cầu được không ?"
+  
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+    
+
