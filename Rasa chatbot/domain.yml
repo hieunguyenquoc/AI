@@ -2,9 +2,9 @@ version: "2.0"
 
 intents:
     - xin_chao
-    - tam_biet
     - xin_ten
-    - fall_back
+    - tam_biet
+    - nlu_fallback
     - hoc_phan
     - thoi_han_dao_tao
     - dang_ky_nhap_hoc
@@ -20,14 +20,14 @@ intents:
     - tieu_chi_xep_loai_tot_nghiep
     - tieu_chi_de_xet_hoc_bong
     - cac_muc_hoc_bong
+    - out_of_scope
 
-entity:
-   - user_name
+entities:
+  - user_name
 
-slot:
-  user_name:
-    auto_fill : true
-    type: text
+slots:
+   user_name:
+     type: text
 
 responses:
   utter_xin_ten:

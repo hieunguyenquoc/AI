@@ -14,6 +14,8 @@ stories:
   - action: utter_tieu_chi_xep_loai_tot_nghiep
   - intent: tieu_chi_de_xet_hoc_bong 
   - action: utter_tieu_chi_de_xet_hoc_bong
+  - intent: tam_biet
+  - action: utter_tam_biet
 
 - story: cac tieu chi danh gia hoc tap, tot nghiep, hoc bong 1
   steps:
@@ -27,7 +29,8 @@ stories:
   - action: utter_tieu_chi_de_xet_hoc_bong
   - intent: tieu_chi_xep_loai_tot_nghiep
   - action: utter_tieu_chi_xep_loai_tot_nghiep
-  
+  - intent: tam_biet
+  - action: utter_tam_biet
   
 - story: cac tieu chi danh gia hoc tap, tot nghiep, hoc bong 2
   steps:
@@ -41,6 +44,8 @@ stories:
   - action: utter_tieu_chi_de_xet_hoc_bong
   - intent: tieu_chi_xep_loai_hoc_tap
   - action: utter_tieu_chi_xep_loai_hoc_tap
+  - intent: tam_biet
+  - action: utter_tam_biet
 
 - story: cac tieu chi danh gia hoc tap, tot nghiep, hoc bong 3
   steps:
@@ -54,6 +59,8 @@ stories:
   - action: utter_tieu_chi_xep_loai_hoc_tap
   - intent: tieu_chi_de_xet_hoc_bong 
   - action: utter_tieu_chi_de_xet_hoc_bong
+  - intent: tam_biet
+  - action: utter_tam_biet
 
 - story: cac tieu chi danh gia hoc tap, tot nghiep, hoc bong 4
   steps:
@@ -67,6 +74,8 @@ stories:
   - action: utter_tieu_chi_xep_loai_tot_nghiep
   - intent: tieu_chi_xep_loai_hoc_tap
   - action: utter_tieu_chi_xep_loai_hoc_tap
+  - intent: tam_biet
+  - action: utter_tam_biet
   
 
 - story: cac tieu chi danh gia hoc tap, tot nghiep, hoc bong 5
@@ -81,6 +90,8 @@ stories:
   - action: utter_tieu_chi_xep_loai_hoc_tap
   - intent: tieu_chi_xep_loai_tot_nghiep
   - action: utter_tieu_chi_xep_loai_tot_nghiep
+  - intent: tam_biet
+  - action: utter_tam_biet
  
   
 - story: cac dieu kien 
@@ -93,6 +104,8 @@ stories:
   - action: utter_dieu_kien_de_duoc_thi_het_hoc_phan
   - intent: dieu_kien_de_duoc_xet_tot_nghiep
   - action: utter_dieu_kien_de_duoc_xet_tot_nghiep
+  - intent: tam_biet
+  - action: utter_tam_biet
   
 - story: cac dieu kien 1
   steps:
@@ -104,6 +117,8 @@ stories:
   - action: utter_dieu_kien_de_duoc_xet_tot_nghiep
   - intent: dieu_kien_de_duoc_thi_het_hoc_phan
   - action: utter_dieu_kien_de_duoc_thi_het_hoc_phan
+  - intent: tam_biet
+  - action: utter_tam_biet
   
  
 - story: cac canh cao
@@ -118,6 +133,8 @@ stories:
   - action: utter_canh_cao_hoc_duong
   - intent: buoc_thoi_hoc
   - action: utter_buoc_thoi_hoc
+  - intent: tam_biet
+  - action: utter_tam_biet
 
 - story: cac canh cao 1
   steps:
@@ -131,6 +148,8 @@ stories:
   - action: utter_buoc_thoi_hoc 
   - intent: canh_cao_hoc_duong
   - action: utter_canh_cao_hoc_duong
+  - intent: tam_biet
+  - action: utter_tam_biet
   
 
 - story: cac canh cao 2
@@ -145,6 +164,8 @@ stories:
   - action: utter_canh_cao_hoc_duong
   - intent: canh_cao_hoc_tap 
   - action: utter_canh_cao_hoc_tap
+  - intent: tam_biet
+  - action: utter_tam_biet
   
 - story: cac canh cao 3
   steps:
@@ -158,6 +179,8 @@ stories:
   - action: utter_canh_cao_hoc_tap
   - intent: canh_cao_hoc_duong
   - action: utter_canh_cao_hoc_duong
+  - intent: tam_biet
+  - action: utter_tam_biet
  
 - story: cac canh cao 4
   steps:
@@ -171,6 +194,8 @@ stories:
   - action: utter_buoc_thoi_hoc
   - intent: canh_cao_hoc_tap 
   - action: utter_canh_cao_hoc_tap
+  - intent: tam_biet
+  - action: utter_tam_biet
  
 - story: cac canh cao 5
   steps:
@@ -184,6 +209,8 @@ stories:
   - action: utter_canh_cao_hoc_tap
   - intent: buoc_thoi_hoc
   - action: utter_buoc_thoi_hoc
+  - intent: tam_biet
+  - action: utter_tam_biet
   
   
 - story: cac thong tin khac
@@ -206,6 +233,8 @@ stories:
   - action: utter_mien_hoc_va_bao_luu_hoc_phan
   - intent: cac_muc_hoc_bong
   - action: utter_cac_muc_hoc_bong
+  - intent: tam_biet
+  - action: utter_tam_biet
 
 - story: cac thong tin khac 2
   steps:
@@ -213,11 +242,57 @@ stories:
   - action: utter_xin_chao
   - intent: xin_ten
   - action: utter_xin_ten
+  - intent: thoi_han_dao_tao
   - action: utter_thoi_han_dao_tao
   - intent: dang_ky_nhap_hoc
+  - action: utter_dang_ky_nhap_hoc
+  - intent: hoc_phan
+  - action: utter_hoc_phan
+  - intent: to_chuc_lop
+  - action: utter_to_chuc_lop
+  - intent: dang_ky_hoc_tap
+  - action: utter_dang_ky_hoc_tap
+  - intent: mien_hoc_va_bao_luu_hoc_phan
+  - action: utter_mien_hoc_va_bao_luu_hoc_phan
+  - intent: cac_muc_hoc_bong
+  - action: utter_cac_muc_hoc_bong
+  - intent: tam_biet
+  - action: utter_tam_biet
+
+- story: cac thong tin khac 3
+  steps:
+  - intent: xin_chao
+  - action: utter_xin_chao
+  - intent: xin_ten
+  - action: utter_xin_ten
+  - intent: dang_ky_nhap_hoc
+  - action: utter_dang_ky_nhap_hoc
   - intent: hoc_phan
   - action: utter_hoc_phan
   - intent: thoi_han_dao_tao
+  - action: utter_thoi_han_dao_tao
+  - intent: to_chuc_lop
+  - action: utter_to_chuc_lop
+  - intent: dang_ky_hoc_tap
+  - action: utter_dang_ky_hoc_tap
+  - intent: mien_hoc_va_bao_luu_hoc_phan
+  - action: utter_mien_hoc_va_bao_luu_hoc_phan
+  - intent: cac_muc_hoc_bong
+  - action: utter_cac_muc_hoc_bong
+  - intent: tam_biet
+  - action: utter_tam_biet
+ 
+- story: cac thong tin khac 4
+  steps:
+  - intent: xin_chao
+  - action: utter_xin_chao
+  - intent: xin_ten
+  - action: utter_xin_ten
+  - intent: thoi_han_dao_tao
+  - action: utter_thoi_han_dao_tao
+  - intent: hoc_phan
+  - action: utter_hoc_phan
+  - intent: dang_ky_nhap_hoc
   - action: utter_dang_ky_nhap_hoc
   - intent: to_chuc_lop
   - action: utter_to_chuc_lop
@@ -227,4 +302,100 @@ stories:
   - action: utter_mien_hoc_va_bao_luu_hoc_phan
   - intent: cac_muc_hoc_bong
   - action: utter_cac_muc_hoc_bong
+  - intent: tam_biet
+  - action: utter_tam_biet
+
+- story: cac thong tin khac 5
+  steps:
+  - intent: xin_chao
+  - action: utter_xin_chao
+  - intent: xin_ten
+  - action: utter_xin_ten
+  - intent: to_chuc_lop
+  - action: utter_to_chuc_lop
+  - intent: thoi_han_dao_tao
+  - action: utter_thoi_han_dao_tao
+  - intent: hoc_phan
+  - action: utter_hoc_phan
+  - intent: dang_ky_nhap_hoc
+  - action: utter_dang_ky_nhap_hoc
+  - intent: dang_ky_hoc_tap
+  - action: utter_dang_ky_hoc_tap
+  - intent: mien_hoc_va_bao_luu_hoc_phan
+  - action: utter_mien_hoc_va_bao_luu_hoc_phan
+  - intent: cac_muc_hoc_bong
+  - action: utter_cac_muc_hoc_bong 
+  - intent: tam_biet
+  - action: utter_tam_biet
+ 
+- story: cac thong tin khac 6
+  steps:
+  - intent: xin_chao
+  - action: utter_xin_chao
+  - intent: xin_ten
+  - action: utter_xin_ten
+  - intent: dang_ky_hoc_tap
+  - action: utter_dang_ky_hoc_tap
+  - intent: to_chuc_lop
+  - action: utter_to_chuc_lop
+  - intent: thoi_han_dao_tao
+  - action: utter_thoi_han_dao_tao
+  - intent: hoc_phan
+  - action: utter_hoc_phan
+  - intent: dang_ky_nhap_hoc
+  - action: utter_dang_ky_nhap_hoc
+  - intent: mien_hoc_va_bao_luu_hoc_phan
+  - action: utter_mien_hoc_va_bao_luu_hoc_phan
+  - intent: cac_muc_hoc_bong
+  - action: utter_cac_muc_hoc_bong 
+  - intent: tam_biet
+  - action: utter_tam_biet
+ 
+- story: cac thong tin khac 7
+  steps:
+  - intent: xin_chao
+  - action: utter_xin_chao
+  - intent: xin_ten
+  - action: utter_xin_ten
+  - intent: mien_hoc_va_bao_luu_hoc_phan
+  - action: utter_mien_hoc_va_bao_luu_hoc_phan
+  - intent: dang_ky_hoc_tap
+  - action: utter_dang_ky_hoc_tap
+  - intent: to_chuc_lop
+  - action: utter_to_chuc_lop
+  - intent: thoi_han_dao_tao
+  - action: utter_thoi_han_dao_tao
+  - intent: hoc_phan
+  - action: utter_hoc_phan
+  - intent: dang_ky_nhap_hoc
+  - action: utter_dang_ky_nhap_hoc
+  - intent: cac_muc_hoc_bong
+  - action: utter_cac_muc_hoc_bong
+  - intent: tam_biet
+  - action: utter_tam_biet
+
+- story: cac thong tin khac 8
+  steps:
+  - intent: xin_chao
+  - action: utter_xin_chao
+  - intent: xin_ten
+  - action: utter_xin_ten
+  - intent: cac_muc_hoc_bong
+  - action: utter_cac_muc_hoc_bong
+  - intent: mien_hoc_va_bao_luu_hoc_phan
+  - action: utter_mien_hoc_va_bao_luu_hoc_phan
+  - intent: dang_ky_hoc_tap
+  - action: utter_dang_ky_hoc_tap
+  - intent: to_chuc_lop
+  - action: utter_to_chuc_lop
+  - intent: thoi_han_dao_tao
+  - action: utter_thoi_han_dao_tao
+  - intent: hoc_phan
+  - action: utter_hoc_phan
+  - intent: dang_ky_nhap_hoc
+  - action: utter_dang_ky_nhap_hoc
+  - intent: tam_biet
+  - action: utter_tam_biet
+  
+  
  

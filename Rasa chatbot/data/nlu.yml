@@ -28,18 +28,18 @@ nlu:
 
 - intent: xin_ten
   examples: |
-    - Tôi tên là [Hiếu](user_name)
-    - Mình tên là [Hiếu](user_name)
-    - [Hiếu](user_name)
-    - Tôi tên là [Đạt](user_name)
-    - Mình tên là [Đạt](user_name)
-    - [Đạt](user_name)
-    - Tôi tên là [Minh Hiếu](user_name)
-    - Mình tên là [Minh Hiếu](user_name)
-    - [Minh Hiếu](user_name)
-    - Tôi tên là [Linh](user_name)
-    - Mình tên là [Linh](user_name)
-    - [Linh](user_name)
+    - Tôi tên là [Hiếu]{"entity": "user_name"}
+    - Mình tên là [Hiếu]{"entity": "user_name"}
+    - [Hiếu]{"entity": "user_name"}
+    - Tôi tên là [Đạt]{"entity": "user_name"}
+    - Mình tên là [Đạt]{"entity": "user_name"}
+    - [Đạt]{"entity": "user_name"}
+    - Tôi tên là [Minh Hiếu]{"entity": "user_name"}
+    - Mình tên là [Minh Hiếu]{"entity": "user_name"}
+    - [Minh Hiếu]{"entity": "user_name"}
+    - Tôi tên là [Linh]{"entity": "user_name"}
+    - Mình tên là [Linh]{"entity": "user_name"}
+    - [Linh]{"entity": "user_name"}
 
 - intent: out_of_scope
   examples: |
@@ -58,6 +58,7 @@ nlu:
     - Mua điện thoại ở đâu ?
     - Việt Nam có bao nhiêu người ?
     - Bot là trai hay gái ?
+    - CMNL mày
 
 - intent : hoc_phan
   examples: |
